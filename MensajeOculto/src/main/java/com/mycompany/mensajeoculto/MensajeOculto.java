@@ -18,10 +18,10 @@ public class MensajeOculto {
 
     public static void main(String[] args) {
     // Direccion de la imagen
-    String inputPath = "C:\\Users\\Sebastian\\Desktop\\Universidad\\Imagen para Taller 2";
+    String inputPath = "C:\\Users\\Sebastian\\Desktop\\Universidad\\imagen_taller\\maradona.png";
     
     // Mensaje
-    String message = "Albo campeon";
+    String message = "Este mensaje esta oculto en la imagen";
     
     // Ocultar el mensaje en la imagen
     hideMessage(inputPath, message);
@@ -94,4 +94,5 @@ private static void setPixelLSB(BufferedImage image, int pixelIndex, int value, 
     Color modifiedColor = new Color(red, green, blue);
     image.setRGB(x, y, modifiedColor.getRGB());
 }
+
 }
